@@ -1,5 +1,5 @@
 # MyWebServer
-手写web服务器
+<br>
 手写web服务器工作流程：<br>
     1、jvm加载时先加载web.xml，经过WebApp解析后，把每个url对应的servlet的名称存成静态map。<br>
     2、server启动后开启serverSocket，while(true)循环accept，每收到一个请求，就新建一个dispatch线程去处理得到的socket，继续accept。<br>
