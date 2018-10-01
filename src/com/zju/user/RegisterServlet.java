@@ -7,7 +7,6 @@ import com.zju.server.core.Servlet;
 public class RegisterServlet implements Servlet {
 	@Override
 	public void service(Request request,Response response) {
-		//关注业务逻辑
 		String uname = request.getParameter("uname");
 		String[] favs =request.getParameterValues("fav");	
 		response.print("<html>"); 
